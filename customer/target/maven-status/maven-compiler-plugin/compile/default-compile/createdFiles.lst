@@ -1,0 +1,8 @@
+com\maripavlova\customer\Customer.class
+com\maripavlova\customer\CustomerRegistrationRequest.class
+com\maripavlova\customer\CustomerConfig.class
+com\maripavlova\customer\CustomerApplication.class
+com\maripavlova\customer\Customer$CustomerBuilder.class
+com\maripavlova\customer\CustomerRepository.class
+com\maripavlova\customer\CustomerService.class
+com\maripavlova\customer\CustomerController.class

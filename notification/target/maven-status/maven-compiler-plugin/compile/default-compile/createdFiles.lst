@@ -1,0 +1,6 @@
+com\maripavlova\notification\NotificationApplication.class
+com\maripavlova\notification\Notification$NotificationBuilder.class
+com\maripavlova\notification\NotificationRepository.class
+com\maripavlova\notification\Notification.class
+com\maripavlova\notification\NotificationController.class
+com\maripavlova\notification\NotificationService.class

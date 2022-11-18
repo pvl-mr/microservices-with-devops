@@ -1,0 +1,6 @@
+com\maripavlova\purchase\PurchaseController.class
+com\maripavlova\purchase\PurchaseApplication.class
+com\maripavlova\purchase\PurchaseCheck$PurchaseCheckBuilder.class
+com\maripavlova\purchase\PurchaseCheckRepository.class
+com\maripavlova\purchase\PurchaseCheck.class
+com\maripavlova\purchase\PurchaseCheckService.class
