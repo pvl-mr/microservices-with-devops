@@ -39,29 +39,29 @@ services:
       - "9411:9411"
     networks:
       - spring
-  eureka-server:
-    image: maripavlova/eureka-server:latest
-    container_name: eureka-server
-    ports:
-      - "8761:8761"
-    environment:
-      - SPRING_PROFILES_ACTIVE=docker
-    networks:
-      - spring
-    depends_on:
-      - zipkin
-  api-gateway:
-    image: maripavlova/api-gateway:latest
-    container_name: api-gateway
-    ports:
-      - "8083:8083"
-    environment:
-      - SPRING_PROFILES_ACTIVE=docker
-    networks:
-      - spring
-    depends_on:
-      - zipkin
-      - eureka-server
+#  eureka-server:
+#    image: maripavlova/eureka-server:latest
+#    container_name: eureka-server
+#    ports:
+#      - "8761:8761"
+#    environment:
+#      - SPRING_PROFILES_ACTIVE=docker
+#    networks:
+#      - spring
+#    depends_on:
+#      - zipkin
+#  api-gateway:
+#    image: maripavlova/api-gateway:latest
+#    container_name: api-gateway
+#    ports:
+#      - "8083:8083"
+#    environment:
+#      - SPRING_PROFILES_ACTIVE=docker
+#    networks:
+#      - spring
+#    depends_on:
+#      - zipkin
+#      - eureka-server
   customer:
     image: maripavlova/customer:latest
     container_name: customer
@@ -74,7 +74,7 @@ services:
       - postgres
     depends_on:
       - zipkin
-      - eureka-server
+#      - eureka-server
       - postgres
   purchase:
     image: maripavlova/purchase:latest
@@ -88,7 +88,7 @@ services:
       - postgres
     depends_on:
       - zipkin
-      - eureka-server
+#      - eureka-server
       - postgres
   notification:
     image: maripavlova/notification:latest
@@ -102,7 +102,7 @@ services:
       - postgres
     depends_on:
       - zipkin
-      - eureka-server
+#      - eureka-server
       - postgres
 #  rabbitmq:
 #    image: rabbitmq:3.9.11-management-alpine

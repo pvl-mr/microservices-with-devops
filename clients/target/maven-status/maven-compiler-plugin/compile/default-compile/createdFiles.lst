@@ -1,4 +1,4 @@
-com\maripavlova\clients\notifications\NotificationClient.class
 com\maripavlova\clients\purchase\PurchaseClient.class
 com\maripavlova\clients\purchase\PurchaseCheckResponse.class
+com\maripavlova\clients\notifications\NotificationClient.class
 com\maripavlova\clients\notifications\NotificationRequest.class

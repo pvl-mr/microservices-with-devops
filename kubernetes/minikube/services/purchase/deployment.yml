@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: purchase
+  labels:
+    app: purchase
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: purchase
+      labels:
+        app: purchase
+    spec:
+      containers:
+        - name: purchase
+          image: maripavlova/purchase:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8081
+          env:
+            - name: SPRING_PROFILES_ACTIVE
+              value: kube
+      restartPolicy: Always
+  selector:
+    matchLabels:
+      app: purchase
